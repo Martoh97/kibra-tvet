@@ -481,15 +481,15 @@ export const Header = () => {
                           Kibra TVC History
                         </Link>
                         <a
-                          href="/downloads/service-charter.pdf" // path to your PDF file
-                          target="_blank" // opens in new tab
-                          rel="noopener noreferrer" // security best practice
-                          download // triggers download
+                          href="/downloads/service-charter.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={() => setMobileMenuOpen(false)}
                           className="text-foreground hover:text-primary transition-colors py-1"
                         >
                           Service Charter
                         </a>
+
                         <Link
                           to="/about/mission-vision"
                           onClick={() => setMobileMenuOpen(false)}
@@ -726,7 +726,11 @@ export const Header = () => {
                     >
                       Contact
                     </a>
-                    <Button asChild className="mt-4">
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-10 py-6 shadow-2xl"
+                    >
                       <Link to="/apply">Apply Now</Link>
                     </Button>
                   </nav>
