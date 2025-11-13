@@ -38,8 +38,16 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(280 65% 45%), hsl(290 70% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 60% 50%), hsl(220 70% 60%));
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(280 65% 45%),
+      hsl(290 70% 55%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(200 60% 50%),
+      hsl(220 70% 60%)
+    );
     --shadow-card: 0 4px 20px -2px hsl(280 65% 45% / 0.15);
     --shadow-hover: 0 8px 30px -4px hsl(280 65% 45% / 0.25);
   }
@@ -73,8 +81,16 @@ All colors MUST be HSL.
     --input: 220 15% 25%;
     --ring: 280 70% 55%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(280 70% 55%), hsl(290 75% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 60% 40%), hsl(220 70% 50%));
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(280 70% 55%),
+      hsl(290 75% 65%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(200 60% 40%),
+      hsl(220 70% 50%)
+    );
     --shadow-card: 0 4px 20px -2px hsl(280 70% 55% / 0.2);
     --shadow-hover: 0 8px 30px -4px hsl(280 70% 55% / 0.3);
   }
@@ -142,6 +158,11 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  html {
+    font-size: 19px; /* Increase from 16px → 18px (12.5% larger text globally) */
+    font-family: sans-serif;
+  }
+
   * {
     @apply border-border;
   }

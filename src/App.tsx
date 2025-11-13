@@ -38,6 +38,7 @@ import PracticalSessions from "./pages/stories/PracticalSessions";
 import EnvironmentalStewardship from "./pages/stories/EnvironmentalStewardship";
 import FormSubmission from "./components/FormSubmission";
 import Apply from "./pages/Apply";
+import Staff from "./pages/management/Staff";
 
 const queryClient = new QueryClient();
 
@@ -93,6 +94,7 @@ const App = () => (
             element={<DeputyPrincipals />}
           />
           <Route path="/management/registrar" element={<Registrar />} />
+          <Route path="/management/Staff" element={<Staff />} />
           <Route
             path="/management/dean-of-students"
             element={<DeanOfStudents />}

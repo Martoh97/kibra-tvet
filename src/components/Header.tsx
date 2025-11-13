@@ -50,7 +50,7 @@ export const Header = () => {
         <div className="container flex mb-4 mt-5 gap-3 mx-auto px-4 g-9 justify-between">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 mr-7">
+            <Link to="/" className="flex items-center gap-2 mr-12">
               <img
                 src={kibraTvcLogo}
                 alt="Kibra TVC Logo"
@@ -65,7 +65,7 @@ export const Header = () => {
             </Link>
 
             {/* Navigation Links */}
-            <div className="hidden lg:flex items-center gap-4 text-sm">
+            <div className="hidden lg:flex items-center gap-4 text-sm ml-7">
               <Link
                 to="/"
                 className="text-foreground hover:text-primary transition-colors font-medium"
