@@ -217,6 +217,7 @@ const Staff = () => {
             </CardContent>
           </Card>
         </div>
+        <Footer />
       </div>
     </>
   );
