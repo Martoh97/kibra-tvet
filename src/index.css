@@ -159,7 +159,7 @@ All colors MUST be HSL.
 
 @layer base {
   html {
-    font-size: 19px; /* Increase from 16px → 18px (12.5% larger text globally) */
+    font-size: 21px; /* Increase from 16px → 18px (12.5% larger text globally) */
     font-family: sans-serif;
   }
 

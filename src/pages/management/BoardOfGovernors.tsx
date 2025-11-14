@@ -1,6 +1,12 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -10,32 +16,34 @@ const BoardOfGovernors = () => {
     {
       name: "Dr. Jane Mwangi",
       position: "Chairperson",
-      description: "Education Policy Expert"
+      description: "Education Policy Expert",
     },
     {
       name: "Prof. David Ochieng",
       position: "Vice Chairperson",
-      description: "Technical Education Specialist"
+      description: "Technical Education Specialist",
     },
     {
       name: "Ms. Grace Njeri",
       position: "Member",
-      description: "Industry Representative"
+      description: "Industry Representative",
     },
     {
       name: "Mr. Peter Kamau",
       position: "Member",
-      description: "Finance & Audit Expert"
-    }
+      description: "Finance & Audit Expert",
+    },
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="relative h-[300px] bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center">
+        <section className="relative h-[250px] bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center">
           <div className="container mx-auto px-4 text-center text-primary-foreground">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">Board of Governors</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              Board of Governors
+            </h1>
             <p className="text-xl md:text-2xl">Leadership and Governance</p>
           </div>
         </section>
@@ -48,7 +56,7 @@ const BoardOfGovernors = () => {
                 Back to Home
               </Link>
             </Button>
-            
+
             <div className="max-w-4xl mx-auto">
               <Card className="mb-8">
                 <CardHeader>
@@ -60,13 +68,18 @@ const BoardOfGovernors = () => {
                 </CardHeader>
                 <CardContent className="prose max-w-none">
                   <p>
-                    The Board of Governors provides strategic direction and oversight for Kibra Technical and Vocational College. 
-                    Comprised of distinguished professionals from education, industry, and public service, the board ensures the 
-                    institution maintains the highest standards of academic excellence and operational integrity.
+                    The Board of Governors provides strategic direction and
+                    oversight for Kibra Technical and Vocational College.
+                    Comprised of distinguished professionals from education,
+                    industry, and public service, the board ensures the
+                    institution maintains the highest standards of academic
+                    excellence and operational integrity.
                   </p>
                   <p className="mt-4">
-                    The board meets regularly to review institutional performance, approve policies, and guide the college's 
-                    development in line with national education standards and industry needs.
+                    The board meets regularly to review institutional
+                    performance, approve policies, and guide the college's
+                    development in line with national education standards and
+                    industry needs.
                   </p>
                 </CardContent>
               </Card>
@@ -79,7 +92,9 @@ const BoardOfGovernors = () => {
                       <CardDescription>{member.position}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">{member.description}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {member.description}
+                      </p>
                     </CardContent>
                   </Card>
                 ))}
